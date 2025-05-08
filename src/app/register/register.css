@@ -1,0 +1,108 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for centering and padding */
+.register-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Form Styling */
+.register-form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Form Group - Label and Input Fields */
+.register-form-group {
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.register-input-field {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.register-input-field:focus + label, 
+.register-input-field:not(:placeholder-shown) + label {
+    top: -12px;
+    left: 15px;
+    font-size: 12px;
+    color: #4e73df;
+}
+
+input[type="text"], select {
+    text-align: left;
+}
+
+select{
+    border: #000;
+}
+
+/* Submit Button */
+.register-submit-btn {
+    padding: 14px 20px;
+    font-size: 18px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-submit-btn:hover {
+    background-color: #3e64c7;
+}
+
+/* Link for login */
+.registers-link {
+    margin-top: 20px;
+}
+
+.register-link {
+    font-size: 16px;
+    color: #4e73df;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}

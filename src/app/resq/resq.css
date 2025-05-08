@@ -1,0 +1,172 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f8;
+    width:100%;
+    height: 100%;
+}
+
+.add-btn {
+    width: 100%;                    /* Full width */
+    max-width: 150px;               /* Limit max width to keep the button size reasonable */
+    padding: 10px;                  /* Adds padding for a more comfortable click area */
+    background-color: #28a745;      /* Green background */
+    color: white;                   /* White text color for contrast */
+    font-size: 24px;                /* Increase font size for better visibility */
+    border: none;                   /* No border */
+    border-radius: 25px;            /* Rounded corners */
+    text-align: center;             /* Center the text/icon */
+    cursor: pointer;               /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth transitions */
+    display: inline-flex;           /* Allow it to scale */
+    justify-content: center;        /* Center icon/text */
+    align-items: center;            /* Vertically center content */
+    box-sizing: border-box;         /* Ensure padding is included in width/height calculations */
+  }
+  
+  .add-btn:hover {
+    background-color: #218838;      /* Darker green on hover */
+    transform: scale(1.05);          /* Slight scale-up effect on hover */
+  }
+  
+  .add-btn:active {
+    background-color: #1e7e34;      /* Even darker green when clicked */
+    transform: scale(0.98);          /* Slight scale-down effect on click */
+  }
+  
+
+
+h1 {
+    font-size: 36px;
+    padding: 30px;
+    padding-left: 30px;
+    text-align: center;
+    color: #388e3c;
+}
+
+
+.card1, .card2 {
+    background-color: #a5d6a7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    padding: 20px;
+    margin-left: 10%;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: baseline;
+    width: 80%;
+}
+
+.card1:hover, .card2:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.small-card {
+    height: 100px;
+    width: 340px;
+    background-color: #fff;
+    text-align: center;
+    margin: auto;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #388e3c;
+}
+
+.small-card h3 {
+    font-weight: bold;
+}
+
+
+.inner-card {
+    height: auto;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    overflow: auto;
+    transition: 0.3s;
+}
+
+.inner-card:hover {
+    box-shadow: 12px 12px 12px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.025);
+}
+
+h4 {
+    font-size: 26px;
+    color: #388e3c;
+}
+
+
+#sosList {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: #000;
+}
+
+
+#sosList th, #sosList td {
+    text-align: center;
+    padding: 8px;
+}
+
+#sosList th {
+    background-color: #388e3c;
+    color: white;
+}
+
+#sosList td {
+    background-color: #f1f8e9;
+}
+
+#sosList tr:hover {
+    background-color: #c8e6c9;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .card1, .card2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card1, .card2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .small-card {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .inner-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+}

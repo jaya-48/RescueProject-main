@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.login-form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    width: 30%;
+    text-align: right;
+}
+
+.login-input-field {
+    width: 65%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.login-input-field:focus {
+    border-color: #4e73df;
+    outline: none;
+}
+
+.login-submit-btn {
+    padding: 14px 20px;
+    font-size: 18px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-submit-btn:hover {
+    background-color: #3e64c7;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-register-link {
+    font-size: 16px;
+    color: #4e73df;
+    text-decoration: none;
+}
+
+.login-register-link:hover {
+    text-decoration: underline;
+}

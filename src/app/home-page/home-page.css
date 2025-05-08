@@ -1,0 +1,154 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f2f9ff, #ffffff);
+  color: #2c3e50;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #004e92, #000428);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-flex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Flash News */
+.home-flash-news {
+  margin-top: 100px;
+  background-color: #ffecb3;
+  color: #333;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+  border-bottom: 2px solid #fbc02d;
+  animation: fadeIn 0.4s ease;
+}
+
+.home-flash-news button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.scrolling-text {
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+  animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Content */
+.home-content {
+  padding: 140px 20px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home-content h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: #004e92;
+  font-weight: 700;
+}
+
+/* Grid Layout */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 30px;
+}
+
+/* Section Cards */
+.home-section-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.home-section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.home-section-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 3px solid #4ca1af;
+}
+
+.home-section-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.home-section-card p,
+.home-section-card ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.home-section-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.home-section-card ul li {
+  margin-bottom: 8px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
