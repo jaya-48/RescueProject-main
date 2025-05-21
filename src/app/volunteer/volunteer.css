@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f7fc; 
     /* background-color: #4e73df; */
-    color: #333;
+    /* color: #333;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -90,4 +90,238 @@ h1 {
     background-color: #3e5ac9;
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+} */ 
+/* .volunteer-container {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .button-group {
+    margin-bottom: 20px;
+  }
+  
+  .volunteer-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .volunteer-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filters label {
+    font-weight: bold;
+  }
+  
+  .filters select,
+  .search-btn {
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .search-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-btn:hover {
+    background-color: #218838;
+  }
+  
+  .service-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-table th,
+  .service-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .service-table th {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .service-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .icon {
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .icon.edit {
+    color: #ffc107;
+  }
+  
+  .icon.edit:hover {
+    color: #e0a800;
+  }
+  
+  .icon.delete {
+    color: #dc3545;
+  }
+  
+  .icon.delete:hover {
+    color: #c82333;
+  }
+  
+  input[type="text"],
+  select {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+   */
+/* Container Styling */
+.volunteer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Heading */
+.volunteer-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.volunteer-button {
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.volunteer-button:hover {
+  background-color: #004d99;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filters label {
+  font-weight: bold;
+}
+
+.filters select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-btn {
+  padding: 6px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-btn:hover {
+  background-color: #218838;
+}
+
+/* Table Styling */
+.service-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.service-table th, .service-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.service-table th {
+  background-color: #0066cc;
+  color: white;
+}
+
+.service-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.service-table input,
+.service-table select {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Action Icons */
+.icon {
+  cursor: pointer;
+  margin: 0 6px;
+  font-size: 16px;
+}
+
+.edit {
+  color: #ffc107;
+}
+
+.delete {
+  color: #dc3545;
+}
+
+/* Remove the + button */
+.add-btn {
+  display: none;
 }

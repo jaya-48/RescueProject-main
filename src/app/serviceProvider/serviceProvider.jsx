@@ -7,6 +7,7 @@ const ServiceProvider = () => {
   const [name, setName] = useState('');
   const [serviceType, setServiceType] = useState('');
   const [available, setAvailable] = useState('');
+  const [location, setLocation] = useState(''); // ✅ New state
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
@@ -17,7 +18,8 @@ const ServiceProvider = () => {
     const serviceProviderData = {
       name,
       serviceType,
-      available: available === 'true'
+      available: available === 'true',
+      location, // ✅ Send location
     };
 
     setLoading(true);
@@ -83,6 +85,19 @@ const ServiceProvider = () => {
           </select>
         </div>
 
+        <div className="serviceform-group"> {/* ✅ Location field */}
+          <label htmlFor="location">Location</label>
+          <input
+            type="text"
+            id="location"
+            required
+            className="serviceform-control"
+            placeholder="Enter location"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+          />
+        </div>
+
         <button type="submit" className="servicebtn btn-primary" disabled={loading}>
           {loading ? 'Submitting...' : 'Submit'}
         </button>
@@ -94,3 +109,4 @@ const ServiceProvider = () => {
 };
 
 export default ServiceProvider;
+
